@@ -1,1 +1,1 @@
-[Live Demo](https://pera-urosevic.github.io/colors)
+[Live Demo](https://pera-urosevic.github.io/colors-astro/)
