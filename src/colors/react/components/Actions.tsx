@@ -8,6 +8,7 @@ const Actions = () => {
   const selected = useColorsStore((state) => state.selected)
 
   const add = (color: Color) => {
+    if (!palette) return
     if (palette.find((c) => c.name === color.name)) {
       alert('Color name already exists')
       return
@@ -17,6 +18,7 @@ const Actions = () => {
   }
 
   const remove = (color: Color) => {
+    if (!palette) return
     const paletteNew = palette.filter((c) => c !== color)
     setPalette(paletteNew)
   }
